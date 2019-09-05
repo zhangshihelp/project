@@ -1,0 +1,5 @@
+jdbc:
+  url: jdbc:mysql://127.0.0.1:3306/study?serverTimezone=GMT&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
+  driverClassName: com.mysql.cj.jdbc.Driver
+  username: root
+  password: 123456
