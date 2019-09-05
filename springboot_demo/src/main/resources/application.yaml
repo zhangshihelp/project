@@ -1,5 +1,32 @@
-jdbc:
-  url: jdbc:mysql://127.0.0.1:3306/study?serverTimezone=GMT&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
-  driverClassName: com.mysql.cj.jdbc.Driver
-  username: root
-  password: 123456
+#jdbc:
+#  url: jdbc:mysql://127.0.0.1:3306/springboot?serverTimezone=GMT&useSSL=false&allowPublicKeyRetrieval=true
+#  driverClassName: com.mysql.cj.jdbc.Driver
+#  username: root
+#  password: 123456
+
+
+#服务器的主路径
+server:
+  servlet:
+    context-path: /index
+
+#控制日志级别
+logging:
+  level:
+    #某个包下的日志级别
+    me.zs: debug
+
+#spring的连接池信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot?serverTimezone=GMT&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+
+#mybatis配置信息
+mybatis:
+  type-aliases-package: me.zs.pojo
+#  configuration:
+#    map-underscore-to-camel-case: true
+#  mapper-locations: mapper/*.xml
