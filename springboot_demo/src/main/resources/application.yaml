@@ -8,7 +8,7 @@
 #服务器的主路径
 server:
   servlet:
-    context-path: /index
+    context-path: /
 
 #控制日志级别
 logging:
