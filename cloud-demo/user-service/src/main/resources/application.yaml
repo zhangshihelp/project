@@ -7,5 +7,16 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/springcloud?serverTimezone=GMT&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 123456
+  application:
+    name: user-service
 mybatis:
   type-aliases-package: me.zs.user.pojo
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8002/eureka,http://127.0.0.1:8003/eureka
+  #固定实例地址
+#  instance:
+#    ip-address: 127.0.0.1
+#    prefer-ip-address: true

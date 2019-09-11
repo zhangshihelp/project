@@ -1,5 +1,7 @@
 server:
+  #先启动8002，注册8003端口
   port: 8002
+  #port: 8003
 
 #服务的名称
 spring:
@@ -10,4 +12,5 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8002/eureka
+      defaultZone: http://127.0.0.1:8003/eureka
+      # defaultZone: http://127.0.0.1:8002/eureka
