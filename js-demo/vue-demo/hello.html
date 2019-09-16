@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    #a{
+        color: red;
+        font: 20px Arial;
+    }
+</style>
 <body>
 <div id="app">
+    <button @click="handleClick">点我</button>
+    <br/>
     <input type="text" v-model="num">
     <button @click="num++">+</button>
     <h1>
@@ -13,6 +21,13 @@
         {{num}} 位女神为其着迷！
     </h1>
 </div>
+<p id="a">安装Vue和使用Vue</p>
+<p>安装node.js，然后在cmd中输入node -v和npm -v查看是否安装成功</p>
+<p>然后如果有代理设置代理配置，npm config set proxy http://username:password@server:port/</p>
+<p>接着输入npm install nrm -g，其中-g代表全局设置</p>
+<p>最后nrm ls查看所有的源，nrm use taobao选择淘宝源</p>
+<hr/>
+<p>在当前项目下的终端中先输入npm init -y，然后输入npm install vue --save</p>
 <script src="node_modules/vue/dist/vue.js"></script>
 <script>
     const app = new Vue({
@@ -20,6 +35,11 @@
         data:{
             name: "诗神",
             num: 1
+        },
+        methods:{
+            handleClick(){
+                console.log("hello!")
+            }
         }
     });
 </script>
