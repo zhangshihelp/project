@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="num">
+    <button @click="num++">+</button>
+    <h1>
+        {{name}} 非常帅！<br/>
+        {{num}} 位女神为其着迷！
+    </h1>
+</div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el:"#app", //element,vue作用的标签
+        data:{
+            name: "诗神",
+            num: 1
+        }
+    });
+</script>
+</body>
+</html>
