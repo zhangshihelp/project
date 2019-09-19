@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jbdc">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../jar/jbdc" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../jar/jbdc" recursive="false" />
+  </library>
+</component>
